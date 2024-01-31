@@ -352,6 +352,7 @@ footer .footer-bottom-link {
 .policie-tooltip.active {
   top: 1.7rem;
   opacity: 1;
+  z-index: 7 !important;
 }
 .policie-tooltip.active .e-font-icon-svg {
   display: none;
