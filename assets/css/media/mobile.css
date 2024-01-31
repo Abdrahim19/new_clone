@@ -42,6 +42,9 @@
     .main-bascket {
         max-width: 25rem;
     }
+    .slect-currency-basket {
+        width: 50% !important;
+    }
 }
 @media (max-width:992px) {
     .loction-box {
