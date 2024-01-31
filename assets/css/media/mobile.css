@@ -15,8 +15,10 @@
 @media screen and (min-width:330px) {
 
 }
-@media screen and (min-width:400px) {
-
+@media screen and (max-width:430px) {
+    .main-bascket {
+        max-width: 18rem !important;
+    }
 }
 @media screen and (min-width:577px) and (max-width:992px) {
 
@@ -36,6 +38,9 @@
     }
     .bascket-tabel {
         width: 75%;
+    }
+    .main-bascket {
+        max-width: 25rem;
     }
 }
 @media (max-width:992px) {
@@ -111,7 +116,7 @@
     .about-titel {
         font-size: 1.6rem;
     }
-    .
+    
 }
 
 @media (min-width:992px) {
