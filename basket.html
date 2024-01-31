@@ -224,32 +224,26 @@
       </div>
 
 <div class="min-vh-100 cenetr-grid my-5">
-    <div class="container-lg gap-4 gap-lg-0 row">
-      <div class="col-12 col-lg-7 mx-auto " >
-        <div class="row align-items-center mb-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <p class="select-titel">Select your Currency:</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-8" style="padding: 0 !important">
-            <select class="form-select" aria-label="Default select example">
-                <option selected><span class="brjsf_ce_text">
-                    <span>£</span>
-                    <span>&nbsp;</span>
-                    <span>Pound sterling</span>
-                </option>
-                <option value="1"><span>£</span>
-                    <span>&nbsp;</span>
-                    <span>Pound sterling</span></option>
-                <option value="2"><span>£</span>
-                    <span>&nbsp;</span>
-                    <span>Pound sterling</span></option>
-                <option value="3"><span>£</span>
-                    <span>&nbsp;</span>
-                    <span>Pound sterling</span></option>
-              </select>
-          </div>
-        </div>
-    </div>
+    <div class="container-lg row">
+      <div class="d-flex flex-column mb-2 justify-content-lg-center justify-content-start flex-md-row align-items-center gap-2">
+        <p class="select-titel">Select your Currency:</p>
+        <select class="form-select slect-currency-basket"  aria-label="Default select example">
+          <option selected><span class="brjsf_ce_text">
+              <span>£</span>
+              <span>&nbsp;</span>
+              <span>Pound sterling</span>
+          </option>
+          <option value="1"><span>£</span>
+              <span>&nbsp;</span>
+              <span>Pound sterling</span></option>
+          <option value="2"><span>£</span>
+              <span>&nbsp;</span>
+              <span>Pound sterling</span></option>
+          <option value="3"><span>£</span>
+              <span>&nbsp;</span>
+              <span>Pound sterling</span></option>
+        </select>
+      </div>
         <div class="table-responsive bascket-tabel" >
             <table class="table">
                 <thead>
@@ -285,22 +279,15 @@
                 </tbody>
               </table>
             </div>
-            <div class="row gap-3 gap-md-0 align-items-center">
-              <div class=" col-md-6 col-lg-4 flex-1 gap-2">
-                <div class="row gap-3 gap-md-0">
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                       placeholder="Coupon code">
-                  </div>
-                  <div class="col-md-6">
-                  <button class="btn w-100 h-100  btn-sm btn-outline-secondary" 
-                  style="color: rgb(207, 207, 207);">Apply coupon</button>
-                  </div>
-                </div>
-                  </div>
-              <div class="col-md-6 col-lg-8">
-                  <button class="btn  btn-sm btn-light update-btn float-end" style="margin-left: auto;">Update basket</button>
+            <div class="d-flex flex-column mt-3 mt-md-0 flex-md-row gap-3 align-items-center">
+              <div class="md-w-50 w-100 d-flex flex-column flex-sm-row align-items-center gap-2">
+                <input type="text" class="form-control md-w-50 w-100 h-100" id="exampleFormControlInput1"
+                placeholder="Coupon code">
+                <button class="btn md-w-50 w-100 h-100 flex-1  btn-sm btn-outline-secondary" 
+                style="color: rgb(207, 207, 207);">Apply coupon</button>
               </div>
+              <button class="btn  btn-sm btn-light update-btn float-end" 
+              style="margin-left: auto;">Update basket</button>
             </div>
         <div class="min-vh-100 d-grid place-items-center">
           <div class="col-12 col-lg-6 ml-auto">
@@ -334,8 +321,10 @@
                   </table>
               </div>
               <div class="w-100 text-lg-end">
-                <button class="checkout-button p-2 mx-auto" 
-                style="min-height:4rem;font-size: 1.5rem;">Proceed to checkout</button>
+              <button class="checkout-button p-2 mx-auto" 
+                style="min-height:4rem;font-size: 1.5rem;">
+                Proceed to checkout
+              </button>
               </div>
           </div>
         </div>

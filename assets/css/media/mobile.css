@@ -114,6 +114,9 @@
 }
 
 @media (min-width:992px) {
+    .slect-currency-basket {
+        width: 18%;
+    }
     .loction-box {
         max-height: 100vh;
     }
