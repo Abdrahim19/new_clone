@@ -124,3 +124,6 @@ function stickynavbar() {
     }
   }
   document.addEventListener('scroll', stickynavbar);
+
+
+  // handel img model 
