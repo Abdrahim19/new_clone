@@ -103,3 +103,24 @@ function changeContent() {
 
 // Call the function to change the content every 5 seconds
 setInterval(changeContent, 7000);
+
+
+//  start make sticky navbar 
+
+// Get the navbar
+const navbar = document.getElementsByTagName("nav")[0];
+console.log(navbar);
+
+// Get the offset position of the navbar
+const sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickynavbar() {
+    console.log(window.scrollY);
+    if (window.scrollY > 100) {    
+      navbar.classList.add('sticky');
+    } else {
+      navbar.classList.remove('sticky');    
+    }
+  }
+  document.addEventListener('scroll', stickynavbar);

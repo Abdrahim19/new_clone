@@ -1,7 +1,11 @@
 .flex-1 {
     flex: 1;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .h-screen {
   height: 100vh;
   height: 100dvh;
