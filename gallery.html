@@ -28,6 +28,7 @@
   </head>
 
   <body>
+
 <header>
   <!-- start top navbar -->
   <div class="top-navbar py-3 md-py-0 cenetr-grid">
@@ -36,7 +37,7 @@
         <a href="#" class="d-flex Select-Country align-items-center gap-1">
           <i class="bi bi-geo-alt-fill"></i>
           Select Country</a>
-          <a href="#" class="d-flex align-items-center gap-1">
+          <a href="my-account.html" class="d-flex align-items-center gap-1">
             <i class="bi bi-person-fill-lock"></i>
             Stockist Area
           </a>
@@ -57,20 +58,25 @@
     </div>
 
   </div>
-  <nav class="container-lg my-4 d-flex position-relative justify-content-between justify-content-lg-end align-items-center"
+  <nav class="container-xl my-4 d-flex position-relative justify-content-between justify-content-lg-end align-items-center"
    style="height: 10vh;">
-    <a href="index.html" style="width: 17%;">
-      <img src="./assets/images/WoodUbend_logo.png" class="website-logo " style="height: 2rem;" alt="site-logo">
-    </a>
-    <ul class="navlinks d-none d-lg-flex flex-1 align-items-center gap-3">
+   <div class="gap-3 d-lg-block d-flex align-items-center logo-container" l style="width: 17%;">
+     <button id="mobile-menu" class="d-lg-none">
+      <img src="./assets/images/menu.svg" class="mobile-menu" alt="">
+     </button>
+      <a href="index.html">
+        <img src="./assets/images/WoodUbend_logo.png" class="website-logo " style="height: 2rem;" alt="site-logo">
+      </a>
+   </div>
+    <ul class="navlinks d-lg-flex flex-1 align-items-center gap-2 gap-xl-3">
       <li class="navlink shope-link d-flex align-items-center gap-2"><a href="#">
         shope
         <svg style="height: 1rem;" class="e-font-icon-svg e-fas-angle-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
       </a></li>
       <li class="navlink"><a href="about.html">about</a></li>
-      <li class="navlink"><a href="product-category.html">how-to</a></li>
+      <li class="navlink"><a href="how-to.html">how-to</a></li>
       <li class="navlink"><a href="fqo.html">FQO</a></li>
-      <li class="navlink"><a href="gallery.html">gallery</a></li>
+      <li class="navlink"><a href="product-category.html">gallery</a></li>
       <li class="navlink"><a href="blog.html">blog</a></li>
       <li class="navlink"><a href="my-account.html">find-stock</a></li>
       <li class="navlink text-decoration-underline fw-bold blode"><a href="becomeastockist.html">become a stockist</a></li>
@@ -99,7 +105,7 @@
       <a href="my-account.html"><i class="bi bi-person-fill" style="font-size: 1.5rem;"></i></a>
       <a href="#" ><i class="bi bi-lock-fill" style="font-size: 1.5rem;"></i></a>
     </div>
-    <div class="position-absolute big-tool-tip  left-0 py-3 px-3 w-100" >
+    <div class="position-absolute big-tool-tip left-0 py-3 px-3 w-100" >
       <div class="row">
         <div class="col-sm-6 col-lg-4">
           <h3 class="tooltip-titel">WoodUbend</h3>
@@ -172,12 +178,12 @@
         </div>
       </div>
     </div>
-       <div style="z-index: 10;" class="cart position-fixed top-0 right-0 cenetr-grid w-25 min-vh-100 bg-white p-3">
+    <div style="z-index: 10;" class="cart position-fixed top-0 right-0 cenetr-grid w-25 min-vh-100 bg-white p-3">
       <div class="row" style="margin-top: 3rem;">
-        <div class="col-lg-4">
+        <div class="col-4">
           <img src="./assets/images/XmasSet-2-300x300.jpeg" class="w-100 h-100" alt="">
         </div>
-        <div class="col-lg-8">
+        <div class="col-8">
           <p class="product-name" style="font-size: 1rem;">WoodUbend Christmas Set 2</p>
           <div class="d-flex align-items-center">
             <p class="product-subtitel flex-1" style="color: rgb(184, 184, 184);font-size: 1rem;">2 × £17.99</p>
@@ -187,16 +193,18 @@
           </div>
         </div>
       </div>
-      <hr class="mt-3">
-      <div class="py-4 text-center">
-        <p style="font-size: 1rem;"> 
-          <strong>
-            Subtotal: £35.98
-          </strong>
-        </p>
+      <div class="w-100">
+        <hr class="mt-3">
+        <div class="py-4 text-center">
+          <p style="font-size: 1rem;"> 
+            <strong>
+              Subtotal: £35.98
+            </strong>
+          </p>
+        </div>
+        <hr class="my-3">
       </div>
-      <hr class="my-3">
-      <div class="row gap-2">
+      <div class="row gap-2 w-100">
         <a href="basket.html" type="button" class="col-12 text-center cart-button rounded-3">View basket</a>
         <a href="checkout.html" type="button" class="col-12 text-center cart-button rounded-3">Checkout</a>
       </div>
@@ -352,19 +360,18 @@
 </footer>
 <!-- end footer section  -->
 <!-- shoping from section -->
-<div class="bg-shadow" hidden>
   <div class="loction-box row">
-      <div class="col-md-8 col-lg-9 order-2 order-md-1 d-grid gap-3 p-1 py-md-3 px-md-5">
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4">
+      <div class="col-md-8 col-lg-9 order-2 order-md-1 d-flex flex-column justify-content-lg-center gap-3 justify-content-around">
+        <div class="d-flex flex-column flex-lg-row text-center text-lg-strat justify-content-center justify-content-lg-start align-items-center gap-1 gap-lg-4">
           <img src="./assets/images/logo_SollyJo.svg" class="img-popup" alt="">
           <h2 class="box-blue-titel">Hello creative people & WoodUbend lovers! </h2>
         </div>
-        <div class="loction-note d-flex align-items-center gap-4">
+        <div class="loction-note  justify-content-center justify-content-lg-start d-flex align-items-center gap-2">
           <i class="bi bi-geo-alt-fill"></i>
           <h2>Where are you shopping from?   </h2>
         </div>
         <div class="row justify-content-center">
-          <div class="col-sm-6 col-md-4">
+          <div class="col-6 col-sm-4 col-md-4">
             <div class="chose-lang-section">
               <a href="#" class="text-center mb-2" >
                 Australia
@@ -402,7 +409,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-6 col-sm-4 col-md-4">
             <div class="chose-lang-section">
               <a href="#" class="text-center mb-2" >
                 Australia
@@ -440,7 +447,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-6 col-sm-4 col-md-4">
             <div class="chose-lang-section">
               <a href="#" class="text-center mb-2" >
                 Australia
@@ -477,23 +484,24 @@
                 <li class="text-capitalize text-center fw-normal"><a href="#">FRANÇAIS</a></li>
               </ul>
             </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-md-between gap-2">
-            <div class="col-8 loction-note d-flex align-items-center gap-4">
-              <i class="bi bi-geo-alt-fill"></i>
-              <h2>Are you outside these countries?</h2>
-            </div>
-            <button class="loction-button w-100">Visit International</button>
           </div>
         </div>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-md-between gap-2">
+          <div class="loction-note d-flex align-items-center gap-1">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h2>Are you outside these countries?</h2>
+          </div>
+          <button class="loction-button">Visit International</button>
+        </div>
       </div>
-    <div class="col-md-4 col-lg-3 order-1 order-md-2 loction-popup-img">
+    <div class="col-md-4 col-lg-3 order-1 p-0 order-md-2 loction-popup-img">
         <img src="./assets/images/SelectRegion_wub2_web (1).webp" class="object-fit-cover w-100 h-100" alt="">
       </div>
     </div>
+
+<div class="bg-shadow" hidden>
     <i id="close" class="bi bi-x-lg position-absolute" 
     style="top: 1rem; right: 1.5rem; font-size:clamp(1.5rem ,4vw ,2.5rem ); color: #657A97;" ></i>
-
 </div>
 
 

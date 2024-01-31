@@ -111,6 +111,7 @@
     .about-titel {
         font-size: 1.6rem;
     }
+    .
 }
 
 @media (min-width:992px) {
@@ -119,11 +120,10 @@
     }
     .loction-box {
         max-height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     .res-two-col {
         grid-template-columns: repeat(2 , 1fr);
     } 
-    .bg-shadow {
-        display: none;
-    }
 }
