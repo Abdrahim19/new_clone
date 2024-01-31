@@ -31,6 +31,9 @@
     .cart {
         width: 65% !important;
     }
+    .content {
+        width: 100%;
+    }
 }
 @media (max-width:992px) {
     .loction-box {

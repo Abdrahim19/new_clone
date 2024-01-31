@@ -130,3 +130,39 @@
     min-height: 3rem;
     padding: 1rem;
 }
+
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    animation: zoomInOut 10s infinite alternate;
+  }
+  
+  .content {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(100%);
+  font-size:clamp( 1.6rem ,4vw , 2.6rem);
+    /* Add your desired styles for the content */
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+      background-image: url('../images/carsoul-imges/Maneken03_web.jpg');
+    }
+    50% {
+      transform: scale(1.2);
+      background-image: url('../images/carsoul-imges/img1.jpeg');
+    }
+    100% {
+      transform: scale(1);
+      background-image: url('../images/carsoul-imges/img3.jpg');
+    }
+  }

@@ -243,8 +243,21 @@ z-index: 5;
 }
 /* end main navbar */
 /* start hero section  */
-.hero-conatiner .carousel-inner {
+.hero-conatiner  {
   height: calc(100vh - (15vh + 15vh));
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.hero-conatiner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.358);
+  z-index: 2;
 }
 
 /* start benfitest section  */
