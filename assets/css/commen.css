@@ -148,7 +148,7 @@
   .content {
     transition: opacity 0.5s ease, transform 0.5s ease;
   transform: translateY(100%);
-  font-size:clamp( 1.6rem ,4vw , 2.6rem);
+  font-size:clamp( 1rem ,4vw , 2rem);
     /* Add your desired styles for the content */
   }
   

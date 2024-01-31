@@ -12,7 +12,7 @@ const cart_button =  document.querySelector('.bi-lock-fill')
 const cart =  document.querySelector('.cart')
 const close_cart =  document.getElementById('close-cart')
 const mobile_menu =  document.getElementById('mobile-menu')
-const navlinks = document.querySelector('.navlinks')*
+const navlinks = document.querySelector('.navlinks');
 
 
 console.log(loction_button);

@@ -50,6 +50,10 @@
             display: flex;
         }
     }
+    .update-btn {
+        width: 100%;
+        padding: 1rem;
+    }
     .stockist-box {
         transform: translateX(13px);
         padding-right: 2rem;
