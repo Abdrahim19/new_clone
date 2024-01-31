@@ -505,12 +505,22 @@ font-family: "JosefinSans" sans-serif;
 /* end contect form section  */
 
 /* strat blog section  */
+.post-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.post-container > * {
+  flex: 1;
+}
 .blog-card {
   background-color:#e5dbd0  ;
 }
 .blog-card .blog-img {
   width: 100%;
   height: 20rem;
+  object-fit: cover;
 }
 .blog-card .blog-titel {
   margin-bottom: 25px;
